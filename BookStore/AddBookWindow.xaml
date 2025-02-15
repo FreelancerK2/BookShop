@@ -1,0 +1,55 @@
+﻿<Window x:Class="BookStore.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStore"
+        mc:Ignorable="d"
+        Title="AddBookWindow" Height="650" Width="350" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Book Name" Foreground="Gray" Margin="5"/>
+            <TextBox Name="txtBookName" Margin="5,0"/>
+
+            <!-- Author -->
+            <TextBlock Text="Author" Foreground="Gray" Margin="5"/>
+            <TextBox Name="txtAuthor" Margin="5,0"/>
+
+            <!-- Publishing House -->
+            <TextBlock Text="Publishing House" Foreground="Gray" Margin="5"/>
+            <TextBox Name="txtPublishingHouse" Margin="5,0"/>
+
+            <!-- Number of Pages -->
+            <TextBlock Text="Number of Pages" Foreground="Gray" Margin="5"/>
+            <TextBox Name="txtNumberOfPages" Margin="5,0"/>
+
+            <!-- Genre -->
+            <TextBlock Text="Genre" Foreground="Gray" Margin="5"/>
+            <TextBox Name="txtGenre" Margin="5,0"/>
+
+            <!-- Date of Publishing -->
+            <TextBlock Text="Date of Publishing" Foreground="Gray" Margin="5"/>
+            <DatePicker Name="dpDateOfPublishing" Margin="5,0"/>
+
+            <!-- Prime Cost -->
+            <TextBlock Text="Prime Cost" Foreground="Gray" Margin="5"/>
+            <TextBox Name="txtPrimeCost" Margin="5,0"/>
+
+            <!-- Sale Price -->
+            <TextBlock Text="Sale Price" Foreground="Gray" Margin="5"/>
+            <TextBox Name="txtSalePrice" Margin="5,0"/>
+
+            <!-- Is Sequel -->
+            <CheckBox Name="chkIsSequel" Content="Is Sequel?" Margin="5"/>
+
+            <!-- Is On Sale -->
+            <CheckBox Name="chkIsOnSale" Content="Is On Sale?" Margin="5"/>
+
+            <!-- Discount -->
+            <TextBlock Text="Discount (%)" Foreground="Gray" Margin="5"/>
+            <TextBox Name="DiscountBox" Margin="5,0"/>
+
+            <Button Content="Add Book" Click="AddBook_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
